@@ -237,5 +237,76 @@
     </main>
 
     <script src="script.js"></script>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Automate Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#overview" target="content">Overview</a></li>
+                <li><a href="#types-of-flows" target="content">Types of Flows</a></li>
+                <li><a href="#sign-up" target="content">Sign Up</a></li>
+                <li><a href="#get-started" target="content">Get Started</a></li>
+                <li><a href="#create-and-manage-flows" target="content">Create and Manage Flows</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <iframe name="content" frameborder="0" src="overview.html"></iframe>
+        </div>
+        <button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
+    </div>
+    <script src="script.js"></script>
+
+
+<style>
+/* Add this to your existing CSS file */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
+
+</style>
+
+<script>
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById('back-to-top').style.display = 'block';
+    } else {
+        document.getElementById('back-to-top').style.display = 'none';
+    }
+}
+
+</script>
+
 </body>
 </html>
+
